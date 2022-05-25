@@ -1,0 +1,138 @@
+/*Rusdianto */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400&family=Quicksand:wght@400;700&display=swap');
+
+body {
+	font-family: 'Montserratt', Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 20px;
+}
+h2, h3 {
+	color: #000000;
+}
+
+li, p {
+	font-size: 20px;
+}
+
+
+footer {
+	padding: 20px;
+    text-align: center;
+	font-weight: bold;
+	color: #000000;
+    background-image: linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+}
+
+.nav img {
+    width: auto;
+    height: 20px;
+    padding: 2px;
+}
+
+.profile header {
+	text-align: center;
+}
+
+footer {
+	padding: 20px;
+    text-align: center;
+	font-weight: bold;
+    color: #000000;
+    background-image: linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+}
+
+.featured-image {
+	width: auto;
+	max-height: 100px;
+	object-fit: cover;
+}
+
+.featured-image img {
+	width: auto;
+    height: 100%;
+}
+
+.profile img {
+	width: 200px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.card img {
+	width: auto;
+	height: 100%;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	text-align: center;
+	color: rgb(0, 100, 25);
+	background-image:linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+}
+
+.jumbotron img {
+	width: 100%;
+	height: auto;
+}
+
+
+nav {
+	padding: 5px;
+	position: sticky;
+	top: 0;
+	background-image:linear-gradient(rgb(255, 218, 116), rgb(247, 193, 47));
+	text-align: center;
+}
+
+nav img {
+	width: auto;
+	height: 20px;
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+	background-color: #80f171;
+}
+
+article img {
+	border-radius: 20px;
+	height: auto;
+	width: 50%;
+	max-width: 300px;
+}
+
+#content {
+	float: left;
+	width: 75%;
+  }
+
+* {
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+}
+ 
+header {
+	display: inline;
+}
