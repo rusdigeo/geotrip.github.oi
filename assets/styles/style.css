@@ -16,23 +16,21 @@ h2, h3 {
 	color: #000000;
 }
 
-li, p {
-	font-size: 20px;
+p {
+	font-size: 15px;
 }
 
-
-footer {
-	padding: 20px;
-    text-align: center;
-	font-weight: bold;
-	color: #000000;
-    background-image: linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+li {
+	text-align: left;
+	font-size: 15px;
 }
 
 .nav img {
     width: auto;
     height: 20px;
     padding: 2px;
+	cursor: pointer;
+	transition: 0.3s ease;
 }
 
 .profile header {
@@ -44,7 +42,8 @@ footer {
     text-align: center;
 	font-weight: bold;
     color: #000000;
-    background-image: linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+    background-image:linear-gradient(rgb(255, 200, 49), rgb(255, 214, 102));
+	box-shadow: 0px 0px 40px rgba(133, 75, 0, 0.5);
 }
 
 .featured-image {
@@ -55,7 +54,31 @@ footer {
 
 .featured-image img {
 	width: auto;
-    height: 100%;
+	max-height: 100px;
+	object-fit: cover;
+}
+
+.event-photo {
+	width: auto;
+	max-height: 180px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px rgba(133, 75, 0, 0.5);
+	transition: 0.3s ease;
+	position: center;
+}
+
+.event-photo:hover {
+	transform: scale(1.1);
+	border-radius: 20px;
+	z-index: 2;
+}
+
+.arrows-down {
+	width: auto;
+	max-height: 80px;
+	box-shadow: 0px 5px 10px rgba(133, 75, 0, 0.5);
+	transition: 0.3s ease;
+	position: center;
 }
 
 .profile img {
@@ -71,9 +94,30 @@ footer {
 	text-align: center;
 }
 
+.photo-profile {
+	box-shadow: 0px 5px 10px rgba(133, 75, 0, 0.5);
+	transition: 0.3s ease;
+}
+
+.photo-profile:hover {
+	transform: scale(1.1);
+	border-radius: 20px;
+	z-index: 2;
+}
+
+.card-profile {
+	border-radius: 20px;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
 .card img {
-	width: auto;
-	height: 100%;
+	border-radius: 20px;
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .jumbotron {
@@ -81,7 +125,7 @@ footer {
 	padding: 60px;
 	text-align: center;
 	color: rgb(0, 100, 25);
-	background-image:linear-gradient(rgb(162, 255, 108), rgb(255, 218, 98));
+	background-image:linear-gradient(rgb(255, 224, 124), rgb(249, 255, 162));
 }
 
 .jumbotron img {
@@ -94,8 +138,10 @@ nav {
 	padding: 5px;
 	position: sticky;
 	top: 0;
-	background-image:linear-gradient(rgb(255, 218, 116), rgb(247, 193, 47));
+	background-image:linear-gradient(rgb(255, 200, 49), rgb(255, 214, 102));
 	text-align: center;
+	box-shadow: 0px 5px 10px rgba(133, 75, 0, 0.5);
+	z-index: 1;
 }
 
 nav img {
@@ -106,7 +152,7 @@ nav img {
 main {
 	padding: 20px;
 	overflow: auto;
-	background-color: #80f171;
+	background-color: #ffde84;
 }
 
 article img {
@@ -114,6 +160,22 @@ article img {
 	height: auto;
 	width: 50%;
 	max-width: 300px;
+}
+
+.chip {
+	display: inline-table;
+	color: #000000;
+	font-size: small;
+	cursor: pointer;
+	margin: 0px 0px 0px 10px;
+}
+  
+.chip img {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 5px 0 -5px;
 }
 
 #content {
@@ -125,7 +187,7 @@ article img {
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1920px) {
 	#content,
 	aside {
 		width: 100%;
